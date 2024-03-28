@@ -1,5 +1,5 @@
 import Link from "../src/components/Link";
-
+import Head from "next/head";
 // export async function getServerSideProps() {
 // console.log("EM MODO DEV, SEMPRE TODA! A CADA ACESSO");
 //   console.log("RODA A CADA ACESSO QUE VOCÊ RECEBE");
@@ -29,6 +29,9 @@ export default function FAQPage({ faq }) {
 
   return (
     <div>
+      <Head>
+        <title>FAQ - Alura Cases Campanha</title>
+      </Head>
       <h1>Alura Cases - Páginas de perguntas FAQ</h1>
       <Link href="/">Ir para a página Home</Link>
       <ul>
